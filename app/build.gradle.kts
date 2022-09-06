@@ -41,13 +41,6 @@ dependencies {
 
 }
 
-/*tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-    kotlinOptions {
-        useOldBackend = true
-//        freeCompilerArgs = listOf("-opt-in=kotlin.RequiresOptIn")
-    }
-}*/
-
 application {
     // Define the main class for the application.
     mainClass.set("subscription.AppKt")
@@ -62,7 +55,7 @@ apollo {
         useSchemaPackageNameForFragments.set(true)
         introspection {
             endpointUrl.set("http://127.0.0.1:7070/v1/graphql")
-            headers.set(mapOf("X-Hasura-Admin-Secret" to "docker-compose.yaml"))
+            headers.set(mapOf("X-Hasura-Admin-Secret" to "gimcrack-chief-ohmmeter-wurst"))
             schemaFile.set(file("src/main/graphql/schema.json"))
         }
 
