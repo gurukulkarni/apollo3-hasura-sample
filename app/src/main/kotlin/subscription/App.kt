@@ -12,7 +12,7 @@ import kotlinx.coroutines.runBlocking
 
 fun main() = runBlocking {
     // Change useGraphQLWsProtocol to true to see the issue appear
-    val apolloClient = createApolloClient(useGraphQLWsProtocol = true)
+    val apolloClient = createApolloClient(useGraphQLWsProtocol = false)
 
     SampleSubscriptions(apolloClient).execute()
 //    SampleQueries(apolloClient).execute()
