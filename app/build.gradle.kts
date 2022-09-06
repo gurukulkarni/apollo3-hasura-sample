@@ -61,8 +61,8 @@ apollo {
         packageNamesFromFilePaths("")
         useSchemaPackageNameForFragments.set(true)
         introspection {
-            endpointUrl.set("https://test-dev.hasura.app/v1/graphql")
-            headers.set(mapOf("X-Hasura-Admin-Secret" to "68kLjrmCTK6ddY7yMZ3x9GegV4ODztHJLHaP1Z8OlE8dJGgbeUPfXNbFeevW"))
+            endpointUrl.set("http://127.0.0.1:7070/v1/graphql")
+            headers.set(mapOf("X-Hasura-Admin-Secret" to "docker-compose.yaml"))
             schemaFile.set(file("src/main/graphql/schema.json"))
         }
 
