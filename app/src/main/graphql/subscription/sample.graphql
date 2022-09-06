@@ -1,0 +1,11 @@
+query SampleQuery {
+  alarmdata_current_server_time {
+     current_epoch_seconds
+  }
+}
+
+subscription SampleSubscription {
+  alarmdata_current_server_time {
+    current_epoch_seconds
+  }
+}
